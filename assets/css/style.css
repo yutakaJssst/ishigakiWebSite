@@ -229,6 +229,17 @@ code {
   box-shadow: none;
 }
 
+.button.is-disabled,
+.button.is-disabled:hover {
+  background: #c4cbc9;
+  color: #2f3c41;
+  border-color: #b4bcba;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  pointer-events: none;
+}
+
 .grid {
   display: grid;
   gap: 14px;
@@ -263,6 +274,12 @@ code {
   border-radius: 999px;
   font-size: 0.82rem;
   font-weight: 700;
+}
+
+.status-live {
+  background: rgba(52, 123, 77, 0.14);
+  border-color: rgba(52, 123, 77, 0.4);
+  color: #1e5a35;
 }
 
 .list {

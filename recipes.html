@@ -37,19 +37,28 @@
         <h1>大島食材レシピ紹介</h1>
         <p>
           銀座スエヒロとのコラボレーションによるレシピPDFを公開するページです。
-          公開準備ができた資料から順次追加します。
+          下記の所定ファイル名で配置すると、このページからすぐ閲覧できます。
         </p>
       </section>
 
       <section class="panel reveal">
-        <h2>公開ステータス</h2>
+        <h2>公開ファイル</h2>
         <div class="grid two">
-          <article class="card status-card">
-            <p class="status">準備中</p>
+          <article class="card status-card" data-pdf-item data-pdf-path="assets/recipes/suehiro-recipe-vol1.pdf">
+            <p class="status status-live" data-pdf-status>公開中</p>
             <h3>銀座スエヒロ連携レシピ Vol.1</h3>
             <p>
-              現在制作中です。公開後、このページからPDFを閲覧・ダウンロードできるようにします。
+              大島食材を使ったレシピ資料です。まずはVol.1を公開枠として用意しています。
             </p>
+            <p class="note">対象ファイル: <code>assets/recipes/suehiro-recipe-vol1.pdf</code></p>
+            <div class="hero-actions">
+              <a class="button" data-pdf-link href="assets/recipes/suehiro-recipe-vol1.pdf" target="_blank" rel="noopener noreferrer"
+                >PDFを開く</a
+              >
+              <a class="button ghost" data-pdf-link href="assets/recipes/suehiro-recipe-vol1.pdf" download
+                >ダウンロード</a
+              >
+            </div>
           </article>
           <article class="card">
             <h3>掲載予定の内容</h3>
@@ -66,12 +75,12 @@
         <h2>PDF公開の運用メモ</h2>
         <div class="card">
           <ol class="list ordered">
-            <li><code>assets/recipes/</code> フォルダへレシピPDFを配置</li>
-            <li>本ページのリンクを追加</li>
-            <li>必要に応じて概要文を更新</li>
+            <li><code>assets/recipes/suehiro-recipe-vol1.pdf</code> を配置</li>
+            <li>Vol.2以降を追加する場合は同形式のカードを複製</li>
+            <li>必要に応じて紹介文を更新</li>
           </ol>
           <p class="note">
-            参考資料として、現在はプロジェクト概要PDFを公開しています。
+            参考資料として、現在はプロジェクト概要PDFも公開しています。
             <a href="assets/docs/izu-oshima-project-overview.pdf" target="_blank" rel="noopener noreferrer"
               >概要PDFを開く</a
             >

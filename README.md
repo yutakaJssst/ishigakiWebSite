@@ -21,15 +21,19 @@
 
 ## レシピPDFの追加方法
 
-1. PDFを `assets/recipes/` にアップロード
-2. `recipes.html` にPDFリンクを追記
+1. `assets/recipes/suehiro-recipe-vol1.pdf` という名前でPDFをアップロード
+2. `recipes.html` を開き、公開状態が「公開中」になることを確認
 
-追記例:
+Vol.2以降を増やす場合の追記例:
 
 ```html
-<a href="assets/recipes/suehiro-recipe-vol1.pdf" target="_blank" rel="noopener noreferrer">
-  銀座スエヒロ連携レシピ Vol.1（PDF）
-</a>
+<article class="card status-card" data-pdf-item data-pdf-path="assets/recipes/suehiro-recipe-vol2.pdf">
+  <p class="status status-live" data-pdf-status>公開中</p>
+  <h3>銀座スエヒロ連携レシピ Vol.2</h3>
+  <a class="button" data-pdf-link href="assets/recipes/suehiro-recipe-vol2.pdf" target="_blank" rel="noopener noreferrer">
+    PDFを開く
+  </a>
+</article>
 ```
 
 ## 備考
